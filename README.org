@@ -14,49 +14,52 @@ Note, an older version exists which provided a GUI that allowed for editing the 
 
 * Drawing lines
 
-The main drawing function is in [[./wires.euk]]:
+The main drawing function is in [[./wires.euk]].
 
 #+INCLUDE: "wires.euk" src text
 
-Each detector's wires are parameterized by  the pitch (=spacing=, arbitrary units) and the angle (=ang= in degrees).  No spatial metric is given so only relative spacing matters.  Individual parameters are set in =wires-*.euk= files shown below.  To simply the calling a little shell script is used:
+Each detector's wires are parameterized by  the pitch (=spacing=, arbitrary units) and the angle (=ang= in degrees).  No spatial metric is given so only relative spacing matters.  Individual parameters are set in =wires-*.euk= files shown below.  To simply the calling a little shell script is used [[./wires.sh]].
 
 #+INCLUDE: "wires.sh" src sh
 
 * MicroBooNE
 
+See [[./wires-uboone.euk]].
 #+INCLUDE: "wires-uboone.euk" src text
 
-#+BEGIN_SRC sh :results none :exports code
+#+BEGIN_SRC sh :results graphics file :exports both :file wires-uboone.png
 ./wires.sh wires-uboone
 #+END_SRC
 
+#+RESULTS:
 [[file:wires-uboone.png]]
 
-[[file:wires-uboone.pdf]]
 
 * LBNE 35t
 
+See [[./wires-35t.euk]].
 #+INCLUDE: "wires-35t.euk" src text
 
-#+BEGIN_SRC sh :results none :exports code
+#+BEGIN_SRC sh :results graphics file :exports both :file wires-35t.png
 ./wires.sh wires-35t
 #+END_SRC
 
+#+RESULTS:
 [[file:wires-35t.png]]
-
-[[file:wires-35t.pdf]]
 
 
 * LBNE 10kt
 
+See [[./wires-10kt.euk]].
 #+INCLUDE: "wires-10kt.euk" src text
 
-#+BEGIN_SRC sh :results none :exports code
+#+BEGIN_SRC sh :results graphics file :exports both :file wires-10kt.png
 ./wires.sh wires-10kt
 #+END_SRC
 
+#+RESULTS:
 [[file:wires-10kt.png]]
 
-[[file:wires-10kt.pdf]]
+
 
 

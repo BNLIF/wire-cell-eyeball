@@ -8,5 +8,6 @@ rm -f ${name}.{ps,png,svg}
 eukleides -o${name}.ps ${name}.euk
 inkscape --without-gui --file=${name}.ps --export-area-drawing \
     --export-pdf=${name}.pdf \
+    --export-plain-svg=${name}.svg \
     --export-png=${name}.png >/dev/null
 
