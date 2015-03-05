@@ -1,0 +1,7 @@
+@wires.euk
+wire_pitch = 0.2
+
+x = draw_wires(wire_pitch*4.50, 0)
+x = draw_wires(wire_pitch*4.88, 45.707)
+x = draw_wires(wire_pitch*4.76, -44.275)
+

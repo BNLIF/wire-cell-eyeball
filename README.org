@@ -1,0 +1,62 @@
+#+TITLE: Eyeballing the LAr TPC Wire Cells
+
+* Visualization Method
+
+The figures shown here are made with [[http://www.eukleides.org][Eukleides]] Euclidean geometry package.  
+
+It can be installed from source or on Debian/Ubuntu with:
+
+#+BEGIN_EXAMPLE
+  $ sudo apt-get install eukleides
+#+END_EXAMPLE
+
+Note, an older version exists which provided a GUI that allowed for editing the geometry description and dynamically setting parameters.  This work is no longer developed and relies on versions of GTK which have dropped out of current Debian distributions.
+
+* Drawing lines
+
+The main drawing function is in [[./wires.euk]]:
+
+#+INCLUDE: "wires.euk" src text
+
+Each detector's wires are parameterized by  the pitch (=spacing=, arbitrary units) and the angle (=ang= in degrees).  No spatial metric is given so only relative spacing matters.  Individual parameters are set in =wires-*.euk= files shown below.  To simply the calling a little shell script is used:
+
+#+INCLUDE: "wires.sh" src sh
+
+* MicroBooNE
+
+#+INCLUDE: "wires-uboone.euk" src text
+
+#+BEGIN_SRC sh :results none :exports code
+./wires.sh wires-uboone
+#+END_SRC
+
+[[file:wires-uboone.png]]
+
+[[file:wires-uboone.pdf]]
+
+* LBNE 35t
+
+#+INCLUDE: "wires-35t.euk" src text
+
+#+BEGIN_SRC sh :results none :exports code
+./wires.sh wires-35t
+#+END_SRC
+
+[[file:wires-35t.png]]
+
+[[file:wires-35t.pdf]]
+
+
+* LBNE 10kt
+
+#+INCLUDE: "wires-10kt.euk" src text
+
+#+BEGIN_SRC sh :results none :exports code
+./wires.sh wires-10kt
+#+END_SRC
+
+[[file:wires-10kt.png]]
+
+[[file:wires-10kt.pdf]]
+
+
