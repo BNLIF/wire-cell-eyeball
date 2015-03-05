@@ -20,6 +20,8 @@ The main drawing function is in [[./wires.euk]].
 
 Each detector's wires are parameterized by  the pitch (=spacing=, arbitrary units) and the angle (=ang= in degrees).  No spatial metric is given so only relative spacing matters.  Individual parameters are set in =wires-*.euk= files shown below.  To simply the calling a little shell script is used [[./wires.sh]].
 
+In blue dashes the half wire pitch locations are shown as these are likely to be used as cell boundaries in some cell definitions.
+
 #+INCLUDE: "wires.sh" src sh
 
 * MicroBooNE
