@@ -34,6 +34,7 @@ See [[./wires-uboone.euk]].
 #+RESULTS:
 [[file:wires-uboone.png]]
 
+[[./wires-uboone.pdf]]
 
 * LBNE 35t
 
@@ -48,6 +49,8 @@ See [[./wires-35t.euk]].
 [[file:wires-35t.png]]
 
 
+[[./wires-35t.pdf]]
+
 * LBNE 10kt
 
 See [[./wires-10kt.euk]].
@@ -61,5 +64,5 @@ See [[./wires-10kt.euk]].
 [[file:wires-10kt.png]]
 
 
-
+[[./wires-10kt.pdf]]
 
