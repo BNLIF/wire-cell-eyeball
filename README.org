@@ -29,6 +29,8 @@ In blue dashes the half wire pitch locations are shown as these are likely to be
 See [[./wires-uboone.euk]].
 #+INCLUDE: "wires-uboone.euk" src text
 
+Note, this initial check was wrong and has wires and half-wire-pitch locations swapped.
+
 #+BEGIN_SRC sh :results graphics file :exports both :file wires-uboone.png
 ./wires.sh wires-uboone
 #+END_SRC
